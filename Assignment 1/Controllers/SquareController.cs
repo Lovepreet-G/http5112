@@ -8,12 +8,13 @@ using System.Web.Http;
 namespace Assignment_1.Controllers
 {
    
-    public class Square1Controller : ApiController
+    public class SquareController : ApiController
     {
         //GET /api/Square/{id}
         public int Get(int num)
         {
-            return num * num;
+            var square = num * num;
+            return square;
         }
     }
 }

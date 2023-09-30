@@ -13,7 +13,8 @@ namespace Assignment_1.Controllers
         //POST /api/Greeting
         public string Post() 
         {
-            return "Hello World!";
+            var greet = "Hello World!";
+            return greet;
         }
         //get /api/Greeting/ {id}
         public string get(int id)
