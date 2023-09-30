@@ -15,6 +15,7 @@ namespace Assignment_1.Controllers
         {
             return "Hello World!";
         }
+        //get /api/Greeting/ {id}
         public string get(int id)
         {
             var result = "Greetings to " + id+" people!";
