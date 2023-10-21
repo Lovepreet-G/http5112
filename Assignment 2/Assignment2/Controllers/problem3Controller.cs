@@ -23,8 +23,8 @@ namespace Assignment2.Controllers
         /// Get api/problem3/checkdirection/00258 -> Same as the previous instruction 258
         /// </example>
         [HttpGet]
-        [Route("api/problem3/checkdirection/{number}")]
-        public String checkDirection(string number)
+        [Route("api/problem3/checkdirection/{instruction}")]
+        public String checkDirection(string instruction)
         {
             string msg;
             int firstDigit;
@@ -34,9 +34,9 @@ namespace Assignment2.Controllers
             string direction ="";
             
 
-            firstDigit = int.Parse(number.Substring(0, 1));
-            secondDigit = int.Parse(number.Substring(1, 1));
-            lastThreeDigits = int.Parse(number.Substring(2, 3));
+            firstDigit = int.Parse(instruction.Substring(0, 1));
+            secondDigit = int.Parse(instruction.Substring(1, 1));
+            lastThreeDigits = int.Parse(instruction.Substring(2, 3));
 
             sum = firstDigit + secondDigit;
             if(sum%2 == 1)
