@@ -1,0 +1,30 @@
+﻿﻿@model Cumulative2.Models.Teacher
+@{
+    ViewBag.Title = "Show";
+}
+
+<a class="navlink" href="~/Teacher/List">Back To Teachers</a>
+<div id="containershow">
+    <h2>@Model.TeacherFname @Model.TeacherLname <a href="/Teacher/DeleteConfirm/@Model.TeacherId" class="btn btn-danger">Delete</a></h2>
+
+    <table class="table table-striped">
+       
+        <tbody>
+            <tr>
+                <th scope="row">Employee Number</th>
+                <td> @Model.employeenumber</td>
+            </tr>
+            <tr>
+                <th scope="row">Hire Date</th>
+                <td>@Model.HireDate</td>
+            </tr>
+            <tr>
+                <th scope="row">Salary</th>
+                <td>@Model.Salary</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+
+</div>

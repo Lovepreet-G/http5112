@@ -1,0 +1,29 @@
+﻿﻿
+
+﻿@model IEnumerable<Cumulative2.Models.Teacher>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+<p>This page should be showing information about all Teachers</p>
+
+<div id="containerlist">
+    <a href="/Teacher/new" class="btn btn-success">Add Teacher</a>
+    <h2>List of Teachers</h2>
+    @foreach (var teacher in Model)
+    {
+        <div class="listitem row">
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="/Teacher/Show/@teacher.TeacherId">@teacher.TeacherFname @teacher.TeacherLname</a>
+                        </td>
+                    </tr>
+                </tbody>
+               
+            </table>
+</div>
+    }
+</div>
